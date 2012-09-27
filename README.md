@@ -32,3 +32,5 @@ Running
 * Run aptfax
 
 ``` path/to/aptfax/ > python application.py ```
+
+Once you have this running, you should be able to access the application at http://localhost:8080/posts using your web browser.
