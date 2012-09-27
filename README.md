@@ -13,10 +13,10 @@ Setup
 	<td>MongoDB</td><td>Download and install binaries from http://www.mongodb.org/downloads</td>
   </tr>
   <tr>
-	<td>webpy</td><td>*easy_install webpy* or download from http://webpy.org/download</td>
+	<td>webpy</td><td>easy_install webpy or download from http://webpy.org/download</td>
   </tr>
   <tr>
-	<td>pymongo</td><td>*easy_install pymongo* or download from http://pypi.python.org/pypi/pymongo/</td>
+	<td>pymongo</td><td>easy_install pymongo or download from http://pypi.python.org/pypi/pymongo/</td>
   </tr>
   <tr>
 	<td>aptfax</td><td>Clone this repository into local machine</td>
