@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Create post</title>
+		<link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+		<script src="/static/scripts/jquery-1.8.0.min.js" type="text/javascript"></script>
+		<script src="/static/scripts/jquery-ui-1.8.23.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>APTFAX</h1>
+		<a href="/posts/" class="button">Back to search</a>
+		<p>Create your post</p>
+		
+		<form method="post">
+			<fieldset>
+				<legend>Listing</legend>
+				<table>
+					<tbody>
+						<tr>
+							<td>Title</td>
+							<td><input type="text" name="title" /></td>
+						</tr>
+						<tr>
+							<td>Description</td>
+							<td><textarea name="description"></textarea></td>
+						</tr>
+						<tr>
+							<td>Bedrooms</td>
+							<td><input type="text" name="bedrooms" /></td>	
+						</tr>
+						<tr>
+							<td>Asking Price</td>
+							<td><input type="text" name="asking" /></td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Address</legend>
+				<table>
+					<tr>
+						<td>BIN</td>
+						<td><input type="text" name="bin" /></td>
+					</tr>
+					<tr>
+						<td>House No</td>
+						<td><input type="text" name="house_no" /></td>
+					</tr>
+					<tr>
+						<td>Street</td>
+						<td><input type="text" name="street" /></td>
+					</tr>
+					<tr>
+						<td>Apt</td>
+						<td><input type="text" name="apt" /></td>
+					</tr>
+					<tr>
+						<td>Borough</td>
+						<td>
+							<select name="borough">
+								<option>Manhattan</option>
+								<option>Brooklyn</option>
+								<option>Bronx</option>
+								<option>Queens</option>
+								<option>Staten Island</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<input type="submit" />
+		</form>
+		<script type="text/javascript">
+			jQuery(function(){
+				jQuery('button,input[type=submit],.button').button();
+			});
+		</script>
+	</body>
+</html>

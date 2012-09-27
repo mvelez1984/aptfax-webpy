@@ -1,0 +1,62 @@
+$def with (post)
+<html>
+	<head>
+		<title>$post['title']</title>
+		<link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+		<script src="/static/scripts/jquery-1.8.0.min.js" type="text/javascript"></script>
+		<script src="/static/scripts/jquery-ui-1.8.23.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>APTFAX</h1>
+		<a href="/posts/" class="button">Back to search</a>
+		<fieldset>
+			<legend>Listing</legend>
+			<table>
+				<tbody>
+					<tr>
+						<td>Title</td>
+						<td>$post['title']</td>
+					</tr>
+					<tr>
+						<td>Description</td>
+						<td>$post['description']</td>
+					</tr>
+					<tr>
+						<td>Asking Price</td>
+						<td>$post['asking']</td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>Apartment</legend>
+			<table>
+				<tr>
+					<td>BIN</td>
+					<td>$post['bin']</td>
+				</tr>
+				<tr>
+					<td>House No</td>
+					<td>$post['house_no']</td>
+				</tr>
+				<tr>
+					<td>Street</td>
+					<td>$post['street']</td>
+				</tr>
+				<tr>
+					<td>Apt</td>
+					<td>$post['apt']</td>
+				</tr>
+				<tr>
+					<td>Borough</td>
+					<td>$post['borough']</td>
+				</tr>
+			</table>
+		</fieldset>
+		<script type="text/javascript">
+			jQuery(function(){
+				jQuery('button,input[type=submit],.button').button();
+			});
+		</script>	
+	</body>
+</html>
